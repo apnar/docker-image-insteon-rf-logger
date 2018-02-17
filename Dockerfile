@@ -21,7 +21,7 @@ RUN apt-get update -y -qq && \
 
     mkdir /insteon && \
     cd /insteon && \
-    wget https://bitbucket.org/atlas0fd00m/rfcat/downloads/rfcat_150225.tgz && \
+    wget --no-check-certificate https://bitbucket.org/atlas0fd00m/rfcat/downloads/rfcat_150225.tgz && \
     tar xvfz rfcat_150225.tgz && \
     rm -f rfcat_150225.tgz && \
     ln -s rfcat_150225 rfcat && \
