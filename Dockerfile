@@ -17,15 +17,15 @@ RUN apt-get update -y -qq && \
     apt-get install -y --no-install-recommends locales && \
     locale-gen en_US.UTF-8 && \
 
-    apt-get install -y --no-install-recommends wget sdcc git python-usb && \
+    apt-get install -y --no-install-recommends ca-certificates wget sdcc git python-usb && \
 
     mkdir /insteon && \
     cd /insteon && \
-    wget --no-check-certificate https://bitbucket.org/atlas0fd00m/rfcat/downloads/rfcat_150225.tgz && \
+    wget https://bitbucket.org/atlas0fd00m/rfcat/downloads/rfcat_150225.tgz && \
     tar xvfz rfcat_150225.tgz && \
     rm -f rfcat_150225.tgz && \
     ln -s rfcat_150225 rfcat && \
-    git clone http://github.com/apnar/insteonrf.git insteonrf && \
+    git clone https://github.com/apnar/insteonrf.git insteonrf && \
 
     cd /insteon/rfcat && \
     python setup.py install && \

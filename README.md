@@ -31,3 +31,7 @@ http://goodfet.sourceforge.net/
 http://smile.amazon.com/Hackaday-Goodfet42/dp/B015P8219Y/
 https://www.adafruit.com/products/1279
 
+
+Forum Thread:
+https://forum.universal-devices.com/topic/17474-how-to-receive-send-log-spoof-all-insteon-rf-traffic/
+
