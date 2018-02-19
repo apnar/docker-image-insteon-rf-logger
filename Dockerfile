@@ -25,7 +25,7 @@ RUN apt-get update -y -qq && \
     tar xvfz rfcat_150225.tgz && \
     rm -f rfcat_150225.tgz && \
     ln -s rfcat_150225 rfcat && \
-    git clone https://github.com/apnar/insteonrf.git insteonrf && \
+    git clone http://github.com/apnar/insteonrf.git insteonrf && \
 
     cd /insteon/rfcat && \
     python setup.py install && \
